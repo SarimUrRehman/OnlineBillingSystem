@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|c:\\users\\pcw\\source\\repos\\onlinebillingsystem\\onlinebillingsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\onlinebillingsystem\\viewmodels\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\viewmodels\\combinedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\onlinebillingsystem\\models\\customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\models\\customerdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\onlinebillingsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\onlinebillingsystem\\views\\home\\items.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\views\\home\\items.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\onlinebillingsystem\\views\\home\\deleterecord.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\views\\home\\deleterecord.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\onlinebillingsystem\\models\\onlinebillingsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89B2699B-82EE-4B7B-A22D-849F05A62D71}|OnlineBillingSystem\\OnlineBillingSystem.csproj|solutionrelative:onlinebillingsystem\\models\\onlinebillingsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteRecord.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Views\\Home\\DeleteRecord.cshtml",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\Views\\Home\\DeleteRecord.cshtml",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Views\\Home\\DeleteRecord.cshtml",
+              "RelativeToolTip": "OnlineBillingSystem\\Views\\Home\\DeleteRecord.cshtml",
+              "ViewState": "AQIAADMAAAAIOPmb/M0lwDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-05T05:56:39.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "OnlineBillingSystem\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-04T15:38:56.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OnlineBillingSystem\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHkAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T04:05:01.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Items.cshtml",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Views\\Home\\Items.cshtml",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\Views\\Home\\Items.cshtml",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Views\\Home\\Items.cshtml",
+              "RelativeToolTip": "OnlineBillingSystem\\Views\\Home\\Items.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-18T04:22:56.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Models\\CustomerDetail.cs",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\Models\\CustomerDetail.cs",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Models\\CustomerDetail.cs",
+              "RelativeToolTip": "OnlineBillingSystem\\Models\\CustomerDetail.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T04:40:30.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CombinedViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\ViewModels\\CombinedViewModel.cs",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\ViewModels\\CombinedViewModel.cs",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\ViewModels\\CombinedViewModel.cs",
+              "RelativeToolTip": "OnlineBillingSystem\\ViewModels\\CombinedViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T15:23:30.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OnlineBillingSystemContext.cs",
+              "DocumentMoniker": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Models\\OnlineBillingSystemContext.cs",
+              "RelativeDocumentMoniker": "OnlineBillingSystem\\Models\\OnlineBillingSystemContext.cs",
+              "ToolTip": "C:\\Users\\Pcw\\source\\repos\\OnlineBillingSystem\\OnlineBillingSystem\\Models\\OnlineBillingSystemContext.cs",
+              "RelativeToolTip": "OnlineBillingSystem\\Models\\OnlineBillingSystemContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAqwBYAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T04:40:41.969Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

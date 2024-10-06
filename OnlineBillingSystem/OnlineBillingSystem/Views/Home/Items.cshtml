@@ -1,0 +1,107 @@
+﻿@model OnlineBillingSystem.ViewModels.CombinedViewModel
+
+<h4>Customer Detail</h4>
+<div class="container">
+    <form method="post" action="/Home/Items" class="row g-3" onsubmit="preventRefresh(event)">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-md-4">
+            <label asp-for="CustomerDetail.CustomerName" class="form-label"></label>
+            <input asp-for="CustomerDetail.CustomerName" placeholder="Enter Your Name" class="form-control" />
+            <span asp-validation-for="CustomerDetail.CustomerName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="CustomerDetail.PaymentMethod" class="form-label">Payment Method</label>
+            <select asp-for="CustomerDetail.PaymentMethod" class="form-select" id="paymentMethod" onchange="toggleCardInput()">
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="CustomerDetail.CardNumber" class="form-label">Card Number</label>
+            <input asp-for="CustomerDetail.CardNumber" id="cardNumber" class="form-control" readonly placeholder="Enter Your Card Number" />
+            <span asp-validation-for="CustomerDetail.CardNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="CustomerDetail.FinalTotal" class="form-label"></label>
+            <input asp-for="CustomerDetail.FinalTotal" placeholder="Final Total" id="finalTotal" class="form-control" readonly />
+        </div>
+
+        <h4>Create Item Bill</h4>
+        <div class="col-md-4">
+            <label asp-for="ItemBill.ItemName" class="form-label"></label>
+            <select asp-for="ItemBill.ItemName" id="itemSelect" class="form-control" onchange="setUnitPrice()">
+                <option value="" disabled selected>Choose an item</option>
+                <option value="Fries" data-price="200">Fries</option>
+                <option value="Burger" data-price="300">Burger</option>
+                <option value="Pizza" data-price="500">Pizza</option>
+            </select>
+            <span asp-validation-for="ItemBill.ItemName" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="ItemBill.UnitPrice" class="form-label"></label>
+            <input asp-for="ItemBill.UnitPrice" id="unitPrice" placeholder="Unit price" class="form-control" readonly />
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="ItemBill.Quantity" class="form-label"></label>
+            <input asp-for="ItemBill.Quantity" id="quantity" class="form-control" placeholder="Set Quantity" oninput="calculateTotal()" />
+            <span asp-validation-for="ItemBill.Quantity" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="ItemBill.Discount" class="form-label"></label>
+            <input asp-for="ItemBill.Discount" value="10" id="discount" placeholder="Set Discount" class="form-control"  />
+        </div>
+
+        <div class="col-md-4">
+            <label asp-for="ItemBill.Total" class="form-label"></label>
+            <input asp-for="ItemBill.Total" placeholder="Total" class="form-control" id="total" readonly />
+        </div>
+
+        <div class="col-md-5">
+            
+            <button type="submit" class="btn btn-success">Order</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function toggleCardInput() {
+        let paymentMethod = document.getElementById("paymentMethod").value;
+        let cardNumberInput = document.getElementById("cardNumber");
+
+        if (paymentMethod === "card") {
+            cardNumberInput.removeAttribute("readonly");
+        } else {
+            cardNumberInput.setAttribute("readonly", true);
+            cardNumberInput.value = ""; // Clear the value when not using card
+        }
+    }
+
+    function setUnitPrice() {
+        var selectedItem = document.getElementById("itemSelect");
+        var selectedPrice = selectedItem.options[selectedItem.selectedIndex].getAttribute("data-price");
+        document.getElementById("unitPrice").value = selectedPrice;
+        calculateTotal();
+    }
+
+    function calculateTotal() {
+        var unitPrice = parseFloat(document.getElementById("unitPrice").value) || 0;
+        var quantity = parseFloat(document.getElementById("quantity").value) || 0;
+        var discount = parseFloat(document.getElementById("discount").value) || 0;
+
+        var total = (unitPrice * quantity) - discount;
+        document.getElementById("total").value = total.toFixed(2);
+        document.getElementById("finalTotal").value = total.toFixed(2); // Set Final Total
+    }
+
+    function preventRefresh(event) {
+        event.preventDefault(); // Prevent form from refreshing the page
+        document.querySelector('form').submit(); // Manually submit the form
+    }
+</script>

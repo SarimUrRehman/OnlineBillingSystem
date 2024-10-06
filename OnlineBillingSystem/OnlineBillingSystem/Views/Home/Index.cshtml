@@ -1,0 +1,108 @@
+﻿@model IEnumerable<OnlineBillingSystem.Models.ItemBill>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Discount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ordered)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnitPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Discount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ordered)
+            </td>
+           
+            <td>
+                
+                <a asp-action="DeleteRecord" asp-route-id="@item.ItemId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+<div class="col-md-3">
+    <button class="btn btn-outline-success" onclick="openOrderModal()">Order Now</button>
+</div>
+
+
+<!-- Modal for Payment -->
+<div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="orderModalLabel">Confirm Your Order</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="balance">Your Total Balance</label>
+                    <input type="text" id="balance" class="form-control" readonly>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <form method="post" asp-action="Ordered">
+                    <input type="hidden" id="itemId" name="itemId" value="" />
+                    <button type="submit" class="btn btn-success">Make Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+
+    function openOrderModal() {
+        
+        var balance = '@ViewBag.TotalBalance';
+
+        
+       document.getElementById('balance').value = balance;
+        $('#orderModal').modal('show');
+    }
+
+</script>
